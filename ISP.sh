@@ -3,8 +3,6 @@ apt-get update
 apt-get install tzdata -y
 timedatectl set-timezone Europe/Moscow
 apt-get install iptables -y
-hostnamectl set-hostname isp.au-team.irpo
-exec bash
 mkdir /etc/net/ifaces/enp6s{19,20}
 cp enp6s18/options enp6s19/
 cp enp6s18/options enp6s20/
@@ -19,6 +17,8 @@ cp /etc/ffr/daemons /etc/frr/daemons.bak
 sed -i 's/osfpd=no/osfpd=yes/g' /etc/frr/daemons
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
+hostnamectl set-hostname isp.au-team.irpo
+exec bash
 systemctl restart network
 systemctl enable --now iptables
 echo SUCCESSFULLY ISP CONFIGURATION BY ANDREONTHEBEST
