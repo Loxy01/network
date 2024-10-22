@@ -14,14 +14,8 @@ cp /etc/net/sysctl.conf /etc/net/sysctl.conf.bak
 sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/net/sysctl.conf
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
+echo 172.16.4.1/28 > /etc/net/ifaces/enp6s19/ipv4address
+echo 172.16.5.1/28 > /etc/net/ifaces/enp6s20/ipv4address
 hostnamectl set-hostname isp.au-team.irpo
-exec bash
+echo propishi ety commandy systemctl enable --now iptables
 systemctl restart network
-systemctl enable --now iptables
-echo SUCCESSFULLY ISP CONFIGURATION BY ANDREONTHEBEST
-echo sdelana copia net/sysctl.conf vot on ec 4ho net/sysctl.conf.bak
-echo sdelana copia frr/daemons vot on ec 4ho frr/daemons.bak
-echo postav ip dla enp6s19 u enp6s20
-echo nastroy ospf dla ip enp6s19 u ip enp6s20
-echo u nastroyka ISP bydet zavershena
-echo END
