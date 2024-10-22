@@ -1,7 +1,7 @@
 apt-get update
 apt-get install iptables -y
 apt-get install frr -y
-systemctl enable --now ffr
+systemctl enable --now frr
 apt-get install tzdata -y
 timedatectl set-timezone Europe/Moscow
 hostnamectl set-hostname isp.au-team.irpo
