@@ -6,11 +6,10 @@ apt-get install iptables -y
 mkdir /etc/net/ifaces/enp6s{19,20}
 cp /etc/net/ifaces/enp6s18/options enp6s19/
 cp /etc/net/ifaces/enp6s18/options enp6s20/
-echo -e "BOOTPROTO=static\nTYPE=eth" /etc/net/ifaces/enp6s19/options
-echo -e "BOOTPROTO=static\nTYPE=eth" /etc/net/ifaces/enp6s20/options
+echo -e "BOOTPROTO=static\nTYPE=eth" > /etc/net/ifaces/enp6s19/options
+echo -e "BOOTPROTO=static\nTYPE=eth" > /etc/net/ifaces/enp6s20/options
 touch /etc/net/ifaces/enp6s19/ipv4address
 touch /etc/net/ifaces/enp6s20/ipv4address
-echo net.ipv4.ip_forward = 1 >> /etc/sysctl.conf
 cp /etc/net/sysctl.conf /etc/net/sysctl.conf.bak
 sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/net/sysctl.conf
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
