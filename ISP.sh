@@ -1,9 +1,9 @@
 apt-get update
+apt-get install tzdata -y
+timedatectl set-timezone Europe/Moscow
 apt-get install iptables -y
 apt-get install frr -y
 systemctl enable --now frr
-apt-get install tzdata -y
-timedatectl set-timezone Europe/Moscow
 hostnamectl set-hostname isp.au-team.irpo
 exec bash
 mkdir /etc/net/ifaces/enp6s{19,20}
