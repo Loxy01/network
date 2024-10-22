@@ -4,8 +4,8 @@ apt-get install tzdata -y
 timedatectl set-timezone Europe/Moscow
 apt-get install iptables -y
 mkdir /etc/net/ifaces/enp6s{19,20}
-cp /etc/net/ifaces/enp6s18/options enp6s19/
-cp /etc/net/ifaces/enp6s18/options enp6s20/
+cp /etc/net/ifaces/enp6s18/options /etc/net/ifaces/enp6s19/
+cp /etc/net/ifaces/enp6s18/options /etc/net/ifaces/enp6s20/
 echo -e "BOOTPROTO=static\nTYPE=eth" > /etc/net/ifaces/enp6s19/options
 echo -e "BOOTPROTO=static\nTYPE=eth" > /etc/net/ifaces/enp6s20/options
 touch /etc/net/ifaces/enp6s19/ipv4address
