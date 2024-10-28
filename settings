@@ -4,4 +4,4 @@ Stavim galochku "Podderzhka virtualnoy LS" -> Ok -> Primenit konfiguratsiyu
 
 HQ-SRV -> Oborudovaniye -> Setevoye ustroystvo (net0) -> Redaktirovat -> Teg virtualnoy LS: 100 -> Ok
 HQ-CLI -> Oborudovaniye -> Setevoye ustroystvo (net0) -> Redaktirovat -> Teg virtualnoy LS: 200 -> Ok
-stend -> Sistema -> Set -> Perezagruzit -> Da
+stend -> Sistema -> SETb -> Perezagruzit -> Da
