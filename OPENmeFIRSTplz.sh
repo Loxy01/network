@@ -1,1 +1,1 @@
-cat startText | less
+cat startText
