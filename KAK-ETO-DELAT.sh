@@ -1,1 +1,1 @@
-cat settings
+cat settings | less
