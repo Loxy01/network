@@ -30,16 +30,16 @@ systemctl restart network
 4, 5 -- user na HQ-RTR, BR-RTR, HQ-SRV, BR-SRV delaetsa tak:
 ### HQ-RTR ###
 usermod -aG wheel user
-echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+echo -e "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 ### BR-RTR ###
 usermod -aG wheel user
-echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+echo -e "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 ### HQ-SRV ###
 usermod -aG wheel user
-echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+echo -e "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 ### BR-SRV ###
 usermod -aG wheel user
-echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+echo -e "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 7 -- Ha HQ-SRV u BR-SRV v file ssh_config postavit yes delaetsa tak:
 ### HQ-SRV ### 
