@@ -2,8 +2,8 @@
 stend -> Sistema -> CETb -> vmbr3(HQ-Net) -> Redaktirovat
 Stavim galochku "Podderzhka virtualnoy LS" -> Ok -> Primenit konfiguratsiyu
 
-HQ-SRV -> Oborudovaniye -> Setevoye ystroystvo (net0) -> Redaktirovat -> Teg virtualnoy LS: 100 -> Ok
-HQ-CLI -> Oborudovaniye -> Setevoye ystroystvo (net0) -> Redaktirovat -> Teg virtualnoy LS: 200 -> Ok
+HQ-SRV -> Oborudovaniye -> Setevoye ystroistvo (net0) -> Redaktirovat -> Teg virtualnoy LS: 100 -> Ok
+HQ-CLI -> Oborudovaniye -> Setevoye ystroistvo (net0) -> Redaktirovat -> Teg virtualnoy LS: 200 -> Ok
 stend -> Sistema -> CETb -> Perezagruzit -> Da
 
 2 -- ip u gateway na HQ-RTR u BR-RTR v storony ISP delaetsa tak:
