@@ -27,8 +27,8 @@ echo NAPISHY PAROL 'P@ssw0rd'
 ssh user@172.16.4.2 "sudo bash /home/user/SH/HQ-RTR.sh"
 echo NAPISHY PAROL 'P@ssw0rd'
 ssh user@172.16.5.2 "sudo bash /home/user/SH/BR-RTR.sh"
+echo teper otkroy HQ-RTR u BR-RTR u posmotri cho tam napisano
 #sudo sh SH/HQ-RTR.sh
-
 apt-get remove git -y
 history -c
 rm -rf SH
