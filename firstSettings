@@ -41,8 +41,7 @@ echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 usermod -aG wheel user
 echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-7 -- na HQ-SRV u BR-SRV v file ssh_config postavit yes delaetsa tak:
-
+7 -- Ha HQ-SRV u BR-SRV v file ssh_config postavit yes delaetsa tak:
 ### HQ-SRV ### 
 ### ishchem tyt PermitRootLogin, PasswordAuthentication i stavim yes ###
 vim etc/openssh/sshd_config
