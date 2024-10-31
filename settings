@@ -1,5 +1,5 @@
 1 -- tag dla VLAN 100 u 200 v samom Proxmox delaetsa tak:
-stend -> Sistema -> Set -> vmbr3(HQ-Net) -> Redaktirovat
+stend -> Sistema -> CETb -> vmbr3(HQ-Net) -> Redaktirovat
 Stavim galochku "Podderzhka virtualnoy LS" -> Ok -> Primenit konfiguratsiyu
 
 HQ-SRV -> Oborudovaniye -> Setevoye ustroystvo (net0) -> Redaktirovat -> Teg virtualnoy LS: 100 -> Ok
