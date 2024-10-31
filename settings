@@ -16,6 +16,7 @@ systemctl restart network
 echo 172.16.5.2/28 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 172.16.4.1 > /etc/net/ifaces/enp6s18/ipv4route
 systemctl restart network
+
 3 -- ip u gateway na HQ-SRV v storony HQ-RTR u na BR-SRV v storony BR-RTR delaetsa tak:
 ### HQ-SRV ###
 echo 192.168.100.2/28 > /etc/net/ifaces/enp6s18/ipv4address
@@ -25,12 +26,17 @@ systemctl restart network
 echo 192.168.0.2/27 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 192.168.0.1 > /etc/net/ifaces/enp6s18/ipv4route\
 systemctl restart network
-4 -- user na HQ-RTR, BR-RTR, HQ-SRV, BR-SRV delaetsa tak:
+
+4, 5 -- user na HQ-RTR, BR-RTR, HQ-SRV, BR-SRV delaetsa tak:
 ### HQ-RTR ###
 usermod -aG wheel user
+echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 ### BR-RTR ###
 usermod -aG wheel user
+echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 ### HQ-SRV ###
 usermod -aG wheel user
+echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 ### BR-SRV ###
 usermod -aG wheel user
+echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
