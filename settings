@@ -6,14 +6,13 @@ HQ-SRV -> Oborudovaniye -> Setevoye ustroystvo (net0) -> Redaktirovat -> Teg vir
 HQ-CLI -> Oborudovaniye -> Setevoye ustroystvo (net0) -> Redaktirovat -> Teg virtualnoy LS: 200 -> Ok
 stend -> Sistema -> CETb -> Perezagruzit -> Da
 
-2 -- ### HQ-RTR ###
-cd /etc/net/ifaces/enp6s18
-echo 172.16.4.2/28 > enp6s18/ipv4address
-echo 172.16.4.1 > enp6s18/ipv4route
+2 -- ip u gateway na HQ-RTR u BR-RTR v storony ISP delaetsa tak:
+### HQ-RTR ###
+echo 172.16.4.2/28 > /etc/net/ifaces/enp6s18/ipv4address
+echo default via 172.16.4.1 > /etc/net/ifaces/enp6s18/ipv4route
 systemctl restart network
 
 ### BR-RTR ###
-cd /etc/net/ifaces/enp6s18
-echo 172.16.5.2/28 > enp6s18/ipv4address
-echo 172.16.4.1 > enp6s18/ipv4route
+echo 172.16.5.2/28 > /etc/net/ifaces/enp6s18/ipv4address
+echo default via 172.16.4.1 > /etc/net/ifaces/enp6s18/ipv4route
 systemctl restart network
