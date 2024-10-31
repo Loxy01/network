@@ -1,5 +1,5 @@
 HELLO MY FRIENDS!!! Script created by GINZYHIT and ANDREONTHEBEST
-Pered zapyskom nado sdelat eto:
+Pered zapyskom ISP.sh nado sdelat eto:
 1 -- Dobavit tag dla VLAN 100 u 200 v samom Proxmox
 2 -- Dat ip u gateway na HQ-RTR u BR-RTR v storony ISP
 3 -- Dat ip u gateway na HQ-SRV v storony HQ-RTR u na BR-SRV v storony BR-RTR
@@ -11,4 +11,4 @@ PermitRootLogin yes
 PasswordAuthentication yes
 
 Esli vse ponal, no ne znaesh kak eto delat, to zapysti file -> sh KAK-ETO-DELAT.sh
-Esli vse ponal u znaesh kak eto delat, to zapysti file -> sh ISP.sh
+Esli vse ponal u znaesh kak eto delat, to potom zapysti file -> sh ISP.sh
