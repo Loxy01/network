@@ -25,3 +25,12 @@ systemctl restart network
 echo 192.168.0.2/27 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 192.168.0.1 > /etc/net/ifaces/enp6s18/ipv4route\
 systemctl restart network
+4 -- user na HQ-RTR, BR-RTR, HQ-SRV, BR-SRV delaetsa tak:
+### HQ-RTR ###
+usermod -aG wheel user
+### BR-RTR ###
+usermod -aG wheel user
+### HQ-SRV ###
+usermod -aG wheel user
+### BR-SRV ###
+usermod -aG wheel user
