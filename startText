@@ -12,4 +12,4 @@ PasswordAuthentication yes
 
 Esli vse ponal, no ne znaesh kak eto delat, to zapysti file -> sh KAK-ETO-DELAT.sh
 Esli vse ponal u znaesh kak eto delat, to potom zapysti file -> sh ISP.sh
-i da, posle togo kak script bydet zavershon, na vseh propisat -> exec bash
+i da, posle togo kak script bydet zavershon, VEZDE propisat -> exec bash
