@@ -6,7 +6,7 @@ vtysh -c "configure terminal" \
       -c "no ip ospf network broadcast" \
       -c "exit" \
       -c "router ospf" \
-      -c "network 192.168.0.0/27 area 0" \
+      -c "network 192.168.0.0/28 area 0" \
       -c "network 172.16.30.0/30 area 0" \
       -c "do wr" \
       -c "exit" \
