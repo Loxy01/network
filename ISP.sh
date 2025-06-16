@@ -22,7 +22,7 @@ systemctl restart network
 echo VVEDY YES I NAPISHY PAROL 'P@ssw0rd'
 scp -r /root/network/* user@172.16.4.2:/home/user/network
 echo VVEDY YES I NAPISHY 'P@ssw0rd'
-scp -r /root/network/* user@172.16.5.2:/home/user/SH
+scp -r /root/network/* user@172.16.5.2:/home/user/network
 echo NAPISHY PAROL 'P@ssw0rd'
 ssh user@172.16.4.2 "sudo bash /home/user/network/HQ-RTR.sh"
 echo NAPISHY PAROL 'P@ssw0rd'
