@@ -28,12 +28,12 @@ systemctl enable --now iptables
 apt-get install dhcp-server -y
 systemctl enable --now dhcpd
 mv -f network/dhcpd.conf /etc/dhcp/dhcpd.conf
-sed -i 's/DHCPDARGS=/DHCPDARGS=enp6s19.200/g' /etc/sysconfig/dhcpd
+sed -i 's/DHCPDARGS=/DHCPDARGS=enp6s19.25/g' /etc/sysconfig/dhcpd
 systemctl restart dhcpd
 #apt-get remove git -y
 echo VVEDY YES I NAPISHY PAROL 'resu'
-sudo scp -r /home/user/network/* user@192.168.100.2:/home/user/network
+sudo scp -r /home/user/network/* user@192.168.15.2:/home/user/network
 echo NAPISHY PAROL 'resu'
-ssh user@192.168.100.2 "sudo bash /home/user/network/HQ-SRV.sh"
+ssh user@192.168.15.2 "sudo bash /home/user/network/HQ-SRV.sh"
 history -c
 clear
