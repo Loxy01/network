@@ -7,8 +7,8 @@ $TTL	1D
 				1H		; ncache
 			)
 	IN	NS	au-team.irpo.
-2.100	IN	PTR	hq-srv.au-team.irpo.
-1.100	IN	PTR	hq-rtr.au-team.irpo.
-1.200	IN	PTR	hq-rtr.au-team.irpo.
+2.15	IN	PTR	hq-srv.au-team.irpo.
+1.15	IN	PTR	hq-rtr.au-team.irpo.
+1.25	IN	PTR	hq-rtr.au-team.irpo.
 1.99	IN	PTR	hq-rtr.au-team.irpo.
-2.200	IN	PTR	hq-cli.au-team.irpo.
+2.25	IN	PTR	hq-cli.au-team.irpo.
