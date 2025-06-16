@@ -7,11 +7,11 @@ systemctl restart network
 sh network/sshuser.sh
 usermod -aG wheel sshuser
 echo -e "WHEEL_USERS ALL=(ALL:ALL) ALL\nWHEEL_USERS ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
-echo -e "Port 2024\nMaxAuthTries 2\nBanner /etc/mybanner\nAllowUsers sshuser" >> /etc/openssh/sshd_config
+echo -e "Port 3010\nMaxAuthTries 2\nBanner /etc/mybanner\nAllowUsers sshuser" >> /etc/openssh/sshd_config
 echo Authorized access only > /etc/mybanner
 cp /etc/net/sysctl.conf /etc/net/sysctl.conf.bak
 sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/net/sysctl.conf
-echo nameserver 192.168.100.2 > /etc/net/ifaces/enp6s18/resolv.conf
+echo nameserver 192.168.15.2 > /etc/net/ifaces/enp6s18/resolv.conf
 systemctl restart network
 systemctl restart sshd
 history -c
