@@ -1,13 +1,13 @@
 #!/bin/bash
 hostnamectl set-hostname hq-rtr.au-team.irpo
-mkdir /etc/net/ifaces/enp6s{19,19.100,19.200,19.999}
+mkdir /etc/net/ifaces/enp6s{19,19.15,19.25,19.999}
 mkdir /etc/net/ifaces/tun0
 cp /etc/net/ifaces/enp6s18/options /etc/net/ifaces/enp6s19/
-echo 172.16.4.2/28 > /etc/net/ifaces/enp6s18/ipv4address
-echo default via 172.16.4.1 > /etc/net/ifaces/enp6s18/ipv4route
+echo 172.16.40.2/28 > /etc/net/ifaces/enp6s18/ipv4address
+echo default via 172.16.40.1 > /etc/net/ifaces/enp6s18/ipv4route
 echo nameserver 77.88.8.8 > /etc/net/ifaces/enp6s18/resolv.conf
-echo 192.168.100.1/26 > /etc/net/ifaces/enp6s19.100/ipv4address
-echo 192.168.200.1/28 > /etc/net/ifaces/enp6s19.200/ipv4address
+echo 192.168.15.1/27 > /etc/net/ifaces/enp6s19.100/ipv4address
+echo 192.168.25.1/28 > /etc/net/ifaces/enp6s19.200/ipv4address
 echo 192.168.99.1/29 > /etc/net/ifaces/enp6s19.999/ipv4address
 echo 172.16.30.1/30 > /etc/net/ifaces/tun0/ipv4address
 echo -e "TYPE=vlan\nHOST=enp6s19\nVID=100\nBOOTPROTO=static" > /etc/net/ifaces/enp6s19.100/options
