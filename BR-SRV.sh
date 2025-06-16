@@ -16,5 +16,4 @@ systemctl restart network
 systemctl restart sshd
 history -c
 #apt-get remove git -y
-rm -rf network
 clear
