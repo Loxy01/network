@@ -35,6 +35,5 @@ echo VVEDY YES I NAPISHY PAROL 'resu'
 sudo scp -r /home/user/network/* user@192.168.100.2:/home/user/network
 echo NAPISHY PAROL 'resu'
 ssh user@192.168.100.2 "sudo bash /home/user/network/HQ-SRV.sh"
-rm -rf network
 history -c
 clear
