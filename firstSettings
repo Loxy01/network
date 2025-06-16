@@ -8,22 +8,22 @@ stend -> Sistema -> CETb -> Perezagruzit -> Da
 
 2 -- ip u gateway na HQ-RTR u BR-RTR v storony ISP delaetsa tak:
 ### HQ-RTR ###
-echo 172.16.4.2/28 > /etc/net/ifaces/enp6s18/ipv4address
-echo default via 172.16.4.1 > /etc/net/ifaces/enp6s18/ipv4route
+echo 172.16.40.2/28 > /etc/net/ifaces/enp6s18/ipv4address
+echo default via 172.16.40.1 > /etc/net/ifaces/enp6s18/ipv4route
 systemctl restart network
 
 ### BR-RTR ###
-echo 172.16.5.2/28 > /etc/net/ifaces/enp6s18/ipv4address
-echo default via 172.16.4.1 > /etc/net/ifaces/enp6s18/ipv4route
+echo 172.16.50.2/28 > /etc/net/ifaces/enp6s18/ipv4address
+echo default via 172.16.50.1 > /etc/net/ifaces/enp6s18/ipv4route
 systemctl restart network
 
 3 -- ip u gateway na HQ-SRV v storony HQ-RTR u na BR-SRV v storony BR-RTR delaetsa tak:
 ### HQ-SRV ###
-echo 192.168.100.2/26 > /etc/net/ifaces/enp6s18/ipv4address
-echo default via 192.168.100.1 > /etc/net/ifaces/enp6s18/ipv4route\
+echo 192.168.15.2/26 > /etc/net/ifaces/enp6s18/ipv4address
+echo default via 192.168.15.1 > /etc/net/ifaces/enp6s18/ipv4route\
 systemctl restart network
 ### BR-SRV ###
-echo 192.168.0.2/27 > /etc/net/ifaces/enp6s18/ipv4address
+echo 192.168.0.2/28 > /etc/net/ifaces/enp6s18/ipv4address
 echo default via 192.168.0.1 > /etc/net/ifaces/enp6s18/ipv4route\
 systemctl restart network
 
