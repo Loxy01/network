@@ -20,17 +20,17 @@ systemctl enable --now iptables
 systemctl restart network
 #sh SH/1.sh
 echo VVEDY YES I NAPISHY PAROL 'P@ssw0rd'
-scp -r /root/SH/* user@172.16.4.2:/home/user/SH
+scp -r /root/network/* user@172.16.4.2:/home/user/network
 echo VVEDY YES I NAPISHY 'P@ssw0rd'
-scp -r /root/SH/* user@172.16.5.2:/home/user/SH
+scp -r /root/network/* user@172.16.5.2:/home/user/SH
 echo NAPISHY PAROL 'P@ssw0rd'
-ssh user@172.16.4.2 "sudo bash /home/user/SH/HQ-RTR.sh"
+ssh user@172.16.4.2 "sudo bash /home/user/network/HQ-RTR.sh"
 echo NAPISHY PAROL 'P@ssw0rd'
-ssh user@172.16.5.2 "sudo bash /home/user/SH/BR-RTR.sh"
+ssh user@172.16.5.2 "sudo bash /home/user/network/BR-RTR.sh"
 echo teper otkroy HQ-RTR u BR-RTR u posmotri cho tam napisano
 #sudo sh SH/HQ-RTR.sh
 apt-get remove git -y
 history -c
-rm -rf SH
+rm -rf network
 clear
 exec bash
