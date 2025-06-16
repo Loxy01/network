@@ -32,5 +32,4 @@ host 192.168.100.2 127.0.0.1
 # clear history
 history -c
 #apt-get remove git -y
-rm -rf network
 clear
