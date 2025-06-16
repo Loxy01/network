@@ -27,7 +27,7 @@ iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
 apt-get install dhcp-server -y
 systemctl enable --now dhcpd
-mv -f SH/dhcpd.conf /etc/dhcp/dhcpd.conf
+mv -f network/dhcpd.conf /etc/dhcp/dhcpd.conf
 sed -i 's/DHCPDARGS=/DHCPDARGS=enp6s19.200/g' /etc/sysconfig/dhcpd
 systemctl restart dhcpd
 #apt-get remove git -y
