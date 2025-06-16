@@ -15,15 +15,15 @@ systemctl restart network
 apt-get install frr -y
 sed -i 's/ospfd=no/ospfd=yes/g' /etc/frr/daemons
 systemctl enable --now frr
-sh SH/frrB.sh
+sh network/frrB.sh
 iptables -t nat -A POSTROUTING -o enp6s18 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
 #apt-get remove git -y
 echo VVEDY YES I NAPISHY PAROL 'resu'
-scp -r /home/user/SH/* user@192.168.0.2:/home/user/SH
+scp -r /home/user/network/* user@192.168.0.2:/home/user/network
 echo NAPISHY PAROL 'resu'
 ssh user@192.168.0.2 "sudo bash /home/user/SH/BR-SRV.sh"
 history -c
-rm -rf SH
+rm -rf network
 clear
