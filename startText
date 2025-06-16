@@ -1,6 +1,6 @@
 HELLO MY FRIENDS!!! Script created by GINZYHIT and ANDREONTHEBEST
 Pered zapyskom ISP.sh nado sdelat eto:
-1 -- Dobavit tag dla VLAN 100 u 200 v samom Proxmox
+1 -- Dobavit tag dla VLAN 15 u 25 v samom Proxmox
 2 -- Dat ip u gateway na HQ-RTR u BR-RTR v storony ISP
 3 -- Dat ip u gateway na HQ-SRV v storony HQ-RTR u na BR-SRV v storony BR-RTR
 4 -- Sozdat usera na HQ-RTR, BR-RTR, HQ-SRV, BR-SRV (usermod -aG wheel user)
