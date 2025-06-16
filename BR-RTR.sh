@@ -23,7 +23,7 @@ systemctl enable --now iptables
 echo VVEDY YES I NAPISHY PAROL 'resu'
 scp -r /home/user/network/* user@192.168.0.2:/home/user/network
 echo NAPISHY PAROL 'resu'
-ssh user@192.168.0.2 "sudo bash /home/user/SH/BR-SRV.sh"
+ssh user@192.168.0.2 "sudo bash /home/user/network/BR-SRV.sh"
 history -c
 rm -rf network
 clear
