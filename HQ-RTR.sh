@@ -13,7 +13,7 @@ echo 172.16.30.1/30 > /etc/net/ifaces/tun0/ipv4address
 echo -e "TYPE=vlan\nHOST=enp6s19\nVID=100\nBOOTPROTO=static" > /etc/net/ifaces/enp6s19.100/options
 echo -e "TYPE=vlan\nHOST=enp6s19\nVID=200\nBOOTPROTO=static" > /etc/net/ifaces/enp6s19.200/options
 echo -e "TYPE=vlan\nHOST=enp6s19\nVID=999\nBOOTPROTO=static" > /etc/net/ifaces/enp6s19.999/options
-echo -e "TYPE=iptun\nTUNTYPE=gre\nTUNLOCAL=172.16.4.2\nTUNREMOTE=172.16.5.2\nTUNTTL=64\nTUNMTU=1400\nTUNOPTIONS='ttl 64'" > /etc/net/ifaces/tun0/options
+echo -e "TYPE=iptun\nTUNTYPE=gre\nTUNLOCAL=172.16.40.2\nTUNREMOTE=172.16.50.2\nTUNTTL=64\nTUNMTU=1400\nTUNOPTIONS='ttl 64'" > /etc/net/ifaces/tun0/options
 cp /etc/net/sysctl.conf /etc/net/sysctl.conf.bak
 sed -i 's/net.ipv4.ip_forward = 0/net.ipv4.ip_forward = 1/g' /etc/net/sysctl.conf
 systemctl restart network
