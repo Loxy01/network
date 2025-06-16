@@ -3,10 +3,10 @@ hostnamectl set-hostname br-rtr.au-team.irpo
 mkdir /etc/net/ifaces/enp6s19
 mkdir /etc/net/ifaces/tun0
 cp /etc/net/ifaces/enp6s18/options /etc/net/ifaces/enp6s19/
-echo 172.16.5.2/28 > /etc/net/ifaces/enp6s18/ipv4address
-echo default via 172.16.5.1 > /etc/net/ifaces/enp6s18/ipv4route
+echo 172.16.50.2/28 > /etc/net/ifaces/enp6s18/ipv4address
+echo default via 172.16.50.1 > /etc/net/ifaces/enp6s18/ipv4route
 echo nameserver 77.88.8.8 > /etc/net/ifaces/enp6s18/resolv.conf
-echo 192.168.0.1/27 > /etc/net/ifaces/enp6s19/ipv4address
+echo 192.168.0.1/28 > /etc/net/ifaces/enp6s19/ipv4address
 echo 172.16.30.2/30 > /etc/net/ifaces/tun0/ipv4address
 echo -e "TYPE=iptun\nTUNTYPE=gre\nTUNLOCAL=172.16.5.2\nTUNREMOTE=172.16.4.2\nTUNTTL=64\nTUNMTU=1400\nTUNOPTIONS='ttl 64'" > /etc/net/ifaces/tun0/options
 cp /etc/net/sysctl.conf /etc/net/sysctl.conf.bak
